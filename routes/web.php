@@ -34,3 +34,6 @@ $router->post('posts/insert',"PostController@store");
 $router->patch('posts/update',"PostController@update");
 
 $router->delete("posts/{id}","PostController@destroy");
+
+$router->post("/register","AuthController@register");
+$router->post("/login","AuthController@login");
