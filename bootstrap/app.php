@@ -60,6 +60,11 @@ $app->routeMiddleware([
 	'checkumur' => App\Http\Middleware\UmurMiddleware::class,
 ]);	
 
+$app->routeMiddleware([
+    'login' => App\Http\Middleware\LoginMiddleware::class,
+]);
+
+
 /* $app->middleware([
 	App\Http\Middleware\UmurMiddleware::class,
 ]); */

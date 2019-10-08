@@ -37,3 +37,5 @@ $router->delete("posts/{id}","PostController@destroy");
 
 $router->post("/register","AuthController@register");
 $router->post("/login","AuthController@login");
+
+$router->get("/user","UserController@index");
